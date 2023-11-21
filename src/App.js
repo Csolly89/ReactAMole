@@ -2,11 +2,11 @@ import { useState } from 'react'
 import MoleContainer from './Components/MoleContainer'
 
 function App() {
-  let [score,setScore] = useState(0)
+  let [score, setScore] = useState(0)
 
   const createMoleHill = () => {
     let hills = []
-    for (let i = 0; i < 16; i++) {
+    for(let i = 0; i < 9; i++) {
       hills.push(
         <MoleContainer 
         key={i}
@@ -16,7 +16,7 @@ function App() {
     }
     return (
       <div>
-        [hills]
+        {hills}
       </div>
     )
   }

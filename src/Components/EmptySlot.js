@@ -3,7 +3,7 @@ import MoleHill from '../molehill.png'
 
 const EmptySlot = (props) => {
     useEffect (() => {
-        let randSeconds = Math.ceil(Math.randon() * 3000)
+        let randSeconds = Math.ceil(Math.random() * 3000)
         let timer = setTimeout(() => {
             props.setDisplayMole(true)
         }, randSeconds)

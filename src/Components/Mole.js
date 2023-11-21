@@ -4,7 +4,7 @@ import moleImg from '../mole.png'
 
 function Mole(props) {
     useEffect (() => {
-        let randSeconds = Math.ceil(Math.randon() * 3000)
+        let randSeconds = Math.ceil(Math.random() * 9000)
         let timer = setTimeout(() => {
             props.setDisplayMole(false)
         }, randSeconds)
@@ -13,7 +13,7 @@ function Mole(props) {
 
     return (
         <div>
-            <img style={{'width':'30vw'}}
+            <img style={{'width':'10vw'}}
             src={moleImg}
             onClick={props.handleClick} />
         </div>
