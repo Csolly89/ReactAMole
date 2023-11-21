@@ -15,7 +15,7 @@ function MoleContainer(props){
     : <EmptySlot toggle={setTheMole} />
 
     return (
-        <div style={{ 'display': 'inline-block', 'width': '20vw'}}>
+        <div style={{ 'display': 'inline-block', 'width': '30vw'}}>
             {displayMole}
         </div>
     )

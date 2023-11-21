@@ -26,7 +26,6 @@ function App() {
       <h1>React-a-Mole!!</h1>
       {score}
       {createMoleHill()}
-      {/* <MoleContainer /> */}
     </div>
   );
 }

@@ -4,9 +4,9 @@ import moleImg from '../mole.png'
 
 function Mole(props) {
     useEffect (() => {
-        let randSeconds = Math.ceil(Math.random() * 9000)
+        let randSeconds = Math.ceil(Math.random() * 3000)
         let timer = setTimeout(() => {
-            props.setDisplayMole(false)
+            props.toggle(true)
         }, randSeconds)
         return () => clearTimeout(timer)
     })
