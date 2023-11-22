@@ -3,7 +3,7 @@ import MoleHill from '../molehill.png'
 
 const EmptySlot = (props) => {
     useEffect (() => {
-        let randSeconds = Math.ceil(Math.random() * 6000)
+        let randSeconds = Math.ceil(Math.random() * 15000)
         let timer = setTimeout(() => {
             props.toggle(true)
         }, randSeconds )

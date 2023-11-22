@@ -10,6 +10,10 @@ function MoleContainer(props){
         setTheMole(false)
     }
 
+// minus a point if the mole hasn't been clicked in a certain amount of time
+// if statement based on time from last click to minus a point..
+
+
     let displayMole = theMole 
     ? <Mole setScore={props.setScore} toggle={setTheMole} handleClick={handleClick} /> 
     : <EmptySlot toggle={setTheMole} />
